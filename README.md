@@ -1,4 +1,4 @@
-# CamCAN_detectPSWEs
+# Paroxysmal Slow-Wave Events (PSWEs) in the CamCAN dataset: relationship to age and cognitive performance
 
 Project Background:
 
