@@ -32,21 +32,21 @@ Note for all listed packages, the indicated version is the most recent version t
 Python: 
 Initial analysis was conducted in Python 2.7.13 but all scripts also run successfully in Python 3.9.7. The following packages were imported:
 
-mne == 1.0.3
-numpy == 1.21.6
-more_itertools == 9.0.0
-scipy == 1.7.3
-matplotlib == 3.5.2
-pandas == 1.3.5
+- mne == 1.0.3
+- numpy == 1.21.6
+- more_itertools == 9.0.0
+- scipy == 1.7.3
+- matplotlib == 3.5.2
+- pandas == 1.3.5
 
 R:
 All statistical analysis was completed in R version 4.2.0. The following packages were imported: 
 
-ggplot2
-hrbrthemes
-plotrix
-fBasics
-multimode
+- ggplot2
+- hrbrthemes
+- plotrix
+- fBasics
+- multimode
 
 Scripts for PSWE detection:
 
@@ -205,7 +205,3 @@ Creates topographies representing the number of PSWEs detected at each channel
 -	Uses info from a sample raw file to create topographies
 -	Replaces the topography data with counts of the number of PSWEs detected at each sensor
 -	Plots topographies (magnetometers and gradiometers separately)
-
-
-
-![image](https://user-images.githubusercontent.com/25189351/212969827-994ae384-9109-47f2-afe7-9ac4b622069c.png)
