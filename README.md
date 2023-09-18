@@ -159,45 +159,6 @@ Removes PSWEs associated with head movements from the dataframe
 
 Scripts for statistics and figure generation:
 
-Note: some further dataframe manipulation may be required to run all statistical scripts
-
-STAT1_add_outcomeVars_toDf.R
-Calculates outcome variables and adds them to existing dataframes 
--	Reads in PSWE_allEvents_controls_behavioural_headposRemoved_data.csv and PSWE_averageEvents.csv
--	Calculates time in events for each participant in PSWE_averageEvents and adds column to dataframe 
--	Calculates number of regions involved in each event in PSWE_allEvents and adds column to dataframe
--	Saves new dataframes over existing 
-
-STAT2_age_analysis.R
-Script to run all age-related statistical analyses: 
--	Reads in 2 PSWE dataframes created in previous step
--	Creates a distribution of time in events and defines low and high groups based on distribution
--	Conducts t-tests comparing ages of participants with low, high, and no PSWEs
--	Creates a bar plot of mean age for each group
--	Conducts regression relating percentage of participants with high time in events to participant age and creates regression plot
--	Repeats distribution, t-tests, and regression for number of regions variable
-
-STAT3_cognitive_analysis.R
-Script to run all statistical analyses based on average Z score:
--	Reads in 2 PSWE dataframes 
--	Conducts t-tests comparing cognitive scores of participants with low, high, and no PSWEs (relies on cut-offs identified in age-related analysis)
--	Creates a bar plot of mean cognitive score for each group
--	Conducts regression relating percentage of participants with high time in events to participants’ cognitive scores and creates regression plot
--	Repeats t-tests, and regression for number of regions variable
-
-STAT4_cognitive_task_comparison.R
-Script to run all statistical analyses on individual cognitive task results:
--	Reads in 2 PSWE dataframes 
--	Conducts t-tests comparing the cognitive scores between low and high time in events groups
--	Conducts t-tests comparing the cognitive scores between low spread and widespread events 
--	Creates bar plots to show differences between groups 
-
-STAT5_regional_analysis.R
-Script to compare regional PSWE activity:
--	Reads in 2 PSWE dataframes
--	Conducts ANOVA and multiple pairwise comparisons to assess differences in the number of active channels between regions
--	Creates bar plot comparing number of active channels per region
-
 FIG_create_average_sensor_maps.py
 Creates topographies representing the number of PSWEs detected at each channel
 -	Reads in PSWE dataframe (1 row per event)
